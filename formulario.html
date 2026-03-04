@@ -3,6 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Escola Virtual</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        body{
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background-color: #eef1f5;
+            color: #333;
+            min-height: 100vh;
+
+        }
+
+        h1{
+            background-color: #1a2f45;
+            color: #ffff;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 32px;
+            letter-spacing: 3px;
+        }
+
+        h2{
+
+            text-align: center;
+            color: #1a2f45;
+            margin: 40px 30px;
+            font-size: 22px;
+            letter-spacing: 1px;
+
+        }
+
+        form{
+            
+            width: 90%;
+            max-width: 960px;
+            margin: 0 auto 60px auto;
+            background-color: #ffffff;
+            padding: 50px 60px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+
+        }
+
+        fieldset{
+
+            border: 2px solid #1a2f45;
+            border-radius: 8px;
+            padding: 30px 35px;
+            margin-bottom: 35px;
+
+        }
+
+        legend{
+            background-color: #1a2f45;
+            color: #ffffff;
+            padding: 7px 18px;
+            border-radius: 5px ;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+
+        </style>
+
 </head>
 <body>
 
@@ -10,74 +81,73 @@
     <h2>Formulario de Pré-Matricula</h2>
 
     <div>
-        <fieldset>
-                <h3>Dados pessoas</h3>
-                <label for="Fnome">Nome do aluno</label> <br>
-                    <input type="text" id="Fnome" name="fnome" placeholder="Digite o nome do aluno"> <br>
-
-                <label for="fNascimento">Nascimento (dd/mm/aa)</label>
-                    <input type="date" id="fNascimento" name= "fNascimento"> <br>
-
-                <label for="fMae">Nome da mãe</label>
-                    <input type="text" id=" fMae" name="fMae" placeholder="Digite o nome da mãe"> <br>
-
-                <label for="fPai">Nome do pai</label>
-                    <input type="text" id=" fPai" name="fpai" placeholder="Digite o nome do pai"> <br>
-
-                <label for="fTell">Telefone DDD</form>
-                    <input type="text" name="fTell" id="fTell" placeholder="DDD"> 
-                <label for="fTelle">Tel</form>
-                    <input type="text" name="fTelle" id="fTelle" placeholder="Tel"> 
-                <label for="fRamal">Ramal</form>
-                    <input type="text" name="fRamal" id="fRamal" placeholder="Ramal"> <br>
-
-                    <label for="fEmail">EMAIL</form>
-                        <input type="text" name="fEmail" id="fEmail" placeholder="Email"> <br>
-
-        </fieldset>
-
-        <fieldset>
-            <h3>Informações da matricula</h3>
-
-            <label for="fSeries">Serie</label><br>
-            <select name="opcoes" id="opcoes">
-                <option value="opicoes">Pré-escolar</option>
-                <option value="opicoes">opição 1</option>
-            </select> <br>
-
-            <td>
-                <label>Turno:</label><br>
-                <input type="radio" name="turno" value="1">
-                <label for="manha">Manhã</label><br>
-                <input type="radio" name="turno" value="2">
-                <label for="tarde">Tarde</label> <br>
-              </td>
-              <td>
-                <label>Atividades Extracurriculares</label><br>
-                <input type="checkbox" name="fInfo" id="fInfo">
-                <label for="fInfo">Informatica</label><br>
-                <input type="checkbox" name="fMus" id="fMus">
-                <label for="fMus">Música</label><br>
-                <input type="checkbox" name="fBal" id="fBal">
-                <label for="fBal">Balet</label><br>
-                <input type="checkbox" name="fPi" id="fPi">
-                <label for="fPi">Pintura</label><br>
-                <input type="checkbox" name="fJudo" id="fJudo">
-                <label for="fJudo">Judo</label><br>
-                <input type="checkbox" name="fFutebol" id="fFutebol">
-                <label for="fFutebol">Futebol</label>
-              </td>
-            </tr>
-          </table>
-        </fieldset>
-        <button type="submit">Enviar Formulário</button>
-        <button type="reset">Limpar Campos</button>
-  
-      </form>
-    </div>
-  
-  
-  
-  </body>
-  
-  </html>
+        <form action="">
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="fNome">Nome do aluno</label>
+            <input type="text" id="fNome" name="fNascimento" placeholder="Digite o nome do aluno"> <br>
+            <label for="fNascimento">Nascimento</label>
+            <input type="date" id="fNascimento" name="fNascimento"><br>
+            <label for="fMae">Nome da Mãe</label>
+            <input type="text" name="fMae" id="fMae" placeholder="Digite o nome da mãe"> <br>
+            <label for="fPai">Nome do Pai</label>
+            <input type="text" name="fPai" id="fPai" placeholder="Digite o nome do pai"><br>
+            <label for="fDDD">Telefone DDD</label>
+            <input type="number" name="fDDD" placeholder="61">
+            <label for="fTel">Tel</label>
+            <input type="number" name="fTel" placeholder="91234-5678">
+            <label for="fRam">Ramal</label>
+            <input type="number" name="fRam" placeholder="1"> <br>
+            <label for="fEmail">E-Mail</label>
+            <input type="text" name="fEmail" id="fEmail" placeholder="youremail@example.com">
+          </fieldset>
+    
+          <fieldset>
+            <legend>Informações de Matrícula</legend>
+            <table>
+              <tr valign="top">
+                <td>
+                  <label for="fSerie">Série</label><br>
+                  <select name="fSerie" id="fSerie">
+                    <option value="pE">Pré-escolar</option>
+                    <option value="pE">Ensino Fundamental</option>
+                    <option value="pE">Ensino Médio</option>
+                    <option value="pE">Ensino Superior</option>
+                  </select>
+                </td>
+                <td>
+                  <label>Turno:</label><br>
+                  <input type="radio" name="turno" value="1">
+                  <label for="manha">Manhã</label><br>
+                  <input type="radio" name="turno" value="2">
+                  <label for="tarde">Tarde</label>
+                </td>
+                <td>
+                  <label>Atividades Extracurriculares</label><br>
+                  <input type="checkbox" name="fInfo" id="fInfo">
+                  <label for="fInfo">Informatica</label><br>
+                  <input type="checkbox" name="fMus" id="fMus">
+                  <label for="fMus">Música</label><br>
+                  <input type="checkbox" name="fBal" id="fBal">
+                  <label for="fBal">Balet</label><br>
+                  <input type="checkbox" name="fPi" id="fPi">
+                  <label for="fPi">Pintura</label><br>
+                  <input type="checkbox" name="fJudo" id="fJudo">
+                  <label for="fJudo">Judo</label><br>
+                  <input type="checkbox" name="fFutebol" id="fFutebol">
+                  <label for="fFutebol">Futebol</label>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+          <button type="submit">Enviar Formulário</button>
+          <button type="reset">Limpar Campos</button>
+    
+        </form>
+      </div>
+    
+    
+    
+    </body>
+    
+    </html>
