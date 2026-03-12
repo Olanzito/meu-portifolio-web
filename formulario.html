@@ -313,7 +313,7 @@
         }
 
         #bloco-telefone-tarde{
-          display: none;
+          display: grid;
           margin: 16px;
           padding: 16px 20px;
           background-color: #fff8f0;
@@ -451,6 +451,12 @@
               <label for="manha">Manhã</label><br>
               <input type="radio" name="turno" id="tarde" value="tarde">
               <label for="tarde">Tarde</label>
+
+              <div id="bloco-telefone-tarde">
+                <p>Telefone de contato para o Turno Tarde</p>
+                <input type="text" id="telefone_tarde" name="telefone_tarde" maxlength="15" placeholder="(61)9 9999-9999">
+              </div>
+
             </td>
   
             <td>
